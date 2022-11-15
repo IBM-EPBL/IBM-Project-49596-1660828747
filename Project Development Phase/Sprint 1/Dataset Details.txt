@@ -1,0 +1,47 @@
+IBM Project Name : Real-Time Communication System Powered by AI for Specially Abled
+TEAM ID          : PNT2022TMID34388
+TEAM Leader      : ASHWATH K
+
+Dataset Details
+
+Source: Kaggle (https://www.kaggle.com/datasets/ahmedkhanak1995/sign-language-gesture-images-dataset)
+
+Class | Number of Images
+------|-----------------
+0     |  1500 images
+1     |  1500 images
+2     |  1500 images
+3     |  1500 images
+4     |  1500 images
+5     |  1500 images
+6     |  1500 images
+7     |  1500 images
+8     |  1500 images
+9     |  1500 images
+A     |  1500 images
+B     |  1500 images
+C     |  1500 images
+D     |  1500 images
+E     |  1500 images
+F     |  1500 images
+G     |  1500 images
+H     |  1500 images
+I     |  1500 images
+J     |  1500 images
+K     |  1500 images
+L     |  1500 images
+M     |  1500 images
+N     |  1500 images
+O     |  1500 images
+P     |  1500 images
+Q     |  1500 images
+R     |  1500 images
+S     |  1500 images
+T     |  1500 images
+U     |  1500 images
+V     |  1500 images
+W     |  1500 images
+X     |  1500 images
+Y     |  1500 images
+Z     |  1500 images
+Space |  1500 images
