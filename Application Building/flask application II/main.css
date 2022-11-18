@@ -1,0 +1,107 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    /* font-family: sans-serif; */
+    font-family: 'Noto Sans', sans-serif;
+}
+
+.navbar{
+    background-color: rgb(245, 6, 6);
+}
+
+.navbar-header{
+    color: antiquewhite;
+    margin-left: 10px;
+}
+
+/* .navigation{
+    margin: 20px;
+    
+} */
+
+
+.header-list{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    margin-top: 10px;
+    margin-right: 40px;
+    justify-content: space-around;
+}
+
+.header-list-elements{
+    color: antiquewhite;
+    font-size: 18px;
+    margin: 0px 20px 0px 20px;
+    font-size: 20px;
+}
+
+.link-tag{
+    text-decoration: none;
+    color: aliceblue;
+}
+
+.link-tag:hover {
+    color: aliceblue;
+}
+
+.container{
+    width: 600px !important;
+    position: relative;
+    margin-top: 100px;
+    color: #474E68;
+    /*<!-- copyrigths:
+    Devanand
+    Dhinesh -->*/
+    background: rgba(255, 255, 255, 0.7);
+    backdrop-filter: saturate(180%) blur(10px);
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    padding: 10px 20px 10px 20px;
+    border-radius: 20px;
+
+}
+
+.sub_container{
+    margin: 10px 40px 10px 40px;
+}
+
+.signup-header{
+    text-align: center;
+    font-size: 40px;
+    margin: 30px 0px 40px 0px;
+}
+
+.submit-btn{
+    width: 80px !important;
+    margin-left: 180px;
+}
+
+#submit_btn{
+    margin-top: 10px;
+}
+
+.profile_detail{
+    font-size: 24px;
+}
+
+.sign_btn_da{
+    text-align: center;
+    color: #fff;
+}
+
+.sign_btn_da a{
+    position:relative;
+    display: inline-block;
+    padding: 12px 36px;
+    margin: 10px 0;
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 20px;
+    letter-spacing: 2px;
+    border-radius: 40px;
+    background: linear-gradient(90deg,#0162c8,#1bcaff);
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+}

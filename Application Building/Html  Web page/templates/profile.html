@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../static/about.css">
+    <link rel="stylesheet" href="../static/index.css">
+    <link rel="stylesheet" href="../static/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/872673ab28.js" crossorigin="anonymous"></script>
+    <link rel="shortcut icon" href="../static/img/favicon_1.ico" type="image/x-icon">
+    <title>Realtime Communication System</title>
+    
+</head>
+<body>
+    <div class="nav_head">
+        <div class="nav_title"><h1>Realtime Communication System</h1></div>
+        <div class="icons">
+            <ul class="header-list">
+                <li class="header-list-elements"><a class="link-tag" id="profile_page" href='./profile.html'>Profile</a></li>
+                <li class="header-list-elements"><a class="link-tag" href="./about_us.html">About</a></li>
+                <li class="header-list-elements"><a class="link-tag" href="../index.html">Home</a></li>
+                <li class="header-list-elements"><a class="link-tag" href="https://github.com/IBM-EPBL/IBM-Project-41629-1660643505" target="_blank"><i class="fa-brands fa-github"></i></a></li>
+            </ul>        
+        </div>
+    </div>
+
+    <div class="persons">
+
+    </div>
+
+    <footer>
+        <p id="copyrights" style="color: #687294; font-size:20px; text-align:center;"></p>
+    </footer>
+    <script>
+        const d = new Date();
+        document.getElementById("copyrights").innerHTML ="Copyright © "+ d.getFullYear();
+
+        const main = document.querySelector('.persons');
+    
+        function isUserLoggedIn(){
+            const isUser = JSON.parse(localStorage.getItem('isLoggedIn'));
+            if(isUser){
+                const userData = JSON.parse(localStorage.getItem('user'));
+    
+                main.innerHTML = `        <div class="cont">
+                    <div class="row">
+                        <div class="c1">
+                            <div class="bg"><img src="../static/img/619c00c608a8d833960e55a3_Benefits of a full stack Developer.png" alt="A"></div>
+                            <div class="pro"><img src="../static/img/profilepic.jpg" alt="B"></div>
+                            <div class="main">
+                                <h2>${userData.name}</h2>
+                                <p style="color: #474E68 ; font-style:italic;">
+                                    <b>${userData.role} <br></b> 
+                                </p>
+                            </div>
+                            <div class="social">
+                                <a href="/" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                                <a href="/" target="_blank"><i class="fa-solid fa-at"></i></a> 
+                                <a href="/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                                <a href="/" target="_blank"><i class="fa-brands fa-github"></i></a>
+                            </div>
+                        </div>
+                        <div class="c2">
+                            <div class="heading">
+                                <h2>Profile Details</h2>
+                            </div>
+                            <div class="mid">
+                                <h3>
+                                    <table>
+                                        <tr>
+                                            <td>Name</td>
+                                            <td>:&nbsp</td>
+                                            <td>${userData.name}</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Email</td>
+                                            <td>:&nbsp</td>
+                                            <td>${userData.email}</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Role</td>
+                                            <td>:&nbsp</td>
+                                            <td>${userData.role}</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Disability</td>
+                                            <td>:&nbsp</td>
+                                            <td>${userData.disability}</td>
+                                        </tr>
+                                    </table>
+                                </h3>
+                                <div class="sign_btn_da" style="text-align:left;">
+                                <a class="btn" id="logout_btn" style="margin-right:20px; font-size: 15px">Log out</a>
+                                <a id="edit_btn" style="font-size: 15px">Edit</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>         
+                </div>`
+    
+            }else{
+                location.href = "./signup.html";
+            }
+        }
+    
+        window.addEventListener('load', isUserLoggedIn);
+    
+        window.onload = function(){
+            const logoutbtn = document.querySelector('.btn');
+            logoutbtn.addEventListener('click', function logOutUser(event){
+                localStorage.clear();
+                location.reload();
+            });    
+        }
+    
+    </script>
+</body>
+</html>

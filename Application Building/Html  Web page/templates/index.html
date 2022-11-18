@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;400;500&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/872673ab28.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../static/index.css">
+    <link rel="shortcut icon" href="../static/img/favicon_1.ico" type="image/x-icon">
+    <title>Realtime Communication System</title>
+</head>
+<body class="body_trans">
+    
+        <div class="nav_head">
+            <div class="nav_title"><h1>Realtime Communication System</h1></div>
+            <div class="icons">
+                <ul class="header-list">
+                    <li class="header-list-elements"><a class="link-tag" id="profile_page" href='profile'>Profile</a></li>
+                    <li class="header-list-elements"><a class="link-tag" href="/about">About</a></li>
+                    <li class="header-list-elements"><a class="link-tag" href="/">Home</a></li>
+                    <li class="header-list-elements"><a class="link-tag" href="https://github.com/IBM-EPBL/IBM-Project-41629-1660643505" target="_blank"><i class="fa-brands fa-github"></i></a></li>
+                </ul>        
+            </div>
+        
+        </div>
+
+        <div class="home_page">
+
+            <div class="main_page">
+                <div class="main_btn">
+                    <div class="main_btn_head">
+                        <h2>
+                            Realtime communication system<br>
+                            powered by A.I. for specially abled<br>
+                            
+                        </h2>
+                    </div>
+                    <div class="main_btn_msg">
+                        <p>
+                            A sign language is a way of communicating by using the hands and other parts of the body.
+                            It should not be confused with body language.Sign languages are an important way for deaf people to communicate.
+                        </p>
+                    </div>
+                    <div class="main_btn_foot">
+                        <a href="translate">START TRANSLATE</a>
+                    </div>
+                </div>
+                <div class="main_img">
+                    <img src="../static/img//sign_lang_1.png" alt="sign lang">
+                </div>
+            </div>
+            <!-- Main_Page -->
+            <div class="main_content">
+                <div class="sign_cont">
+                    <div class="sign_txt">
+                        <h1>What is sign language?</h1>
+                    <p>
+                        Sign language is manual communication commonly used by people who are deaf. 
+                        Sign language is not universal; people who are deaf from different countries speak different sign languages. 
+                        The gestures or symbols in sign language are organized in a linguistic way. 
+                        Each individual gesture is called a sign. <br> 
+                        Each sign has three distinct parts: the handshape, the position of the hands, and the movement of the hands. 
+                        American Sign Language (ASL) is the most commonly used sign language in the United States.
+                    </p>
+                    </div>
+                    <img src="../static/img/ppl.jpg" alt="ppl">
+                </div>
+
+                <div class="pro_cont">
+                    <div class="pro_txt">
+                        <h1>Project Description</h1>
+                        <p>
+                            In our society, we have people with disabilities. The technology is developing day by day but no significant developments are undertaken for the betterment of these people. 
+                            Communications between deaf-mute and a normal person has always been a challenging task. It is very difficult for mute people to convey their message to normal people. 
+                            Since normal people are not trained on hand sign language.
+                            In emergency times conveying their message is very difficult. The human hand has remained a popular choice to convey information in situations where other forms like speech cannot be used. 
+                            Voice Conversion System with Hand Gesture Recognition and translation will be very useful to have a proper conversation between a normal person and an impaired person in any language. <br> <br>
+                            The project aims to develop a system that converts the sign language into a human hearing voice in the desired language to convey a message to normal people, as well as convert speech into understandable sign language for the deaf and dumb. 
+                            We are making use of a convolution neural network to create a model that is trained on different hand gestures. An app is built which uses this model. This app enables deaf and dumb people to convey their information 
+                            using signs which get converted to human-understandable language and speech is given as output.
+                        </p>
+                    </div>
+                    <img src="../static/img/modelCNN.png" alt="cnn" >
+                </div>
+
+            </div>
+
+        </div>
+
+        <footer>
+            <p id="copyrights" style="color: #474E68; font-size:15px; text-align:center;"></p>
+        </footer>
+        <script>
+            const d = new Date();
+            document.getElementById("copyrights").innerHTML ="Copyright © "+ d.getFullYear();
+        </script>
+        
+        <!-- copyrigths:
+        MOHANARINATH -->
+        
+</body>
+</html>
